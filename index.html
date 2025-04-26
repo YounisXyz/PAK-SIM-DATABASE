@@ -176,6 +176,7 @@
 
     <button id="shareButton" onclick="shareWhatsApp()" style="display: none;">📲 EXPORT TO WHATSAPP</button>
     <button class="', '_blank')">DEVELOPER : +923194999455</button>
+    <button id="contactButton" onclick="contactWhatsApp()" style="display: none;">DEVELOPER WHATSAPP</button>
   </div>
 
   <script>
@@ -278,6 +279,13 @@
       const responseBox = document.getElementById("responseBox");
       const text = encodeURIComponent("YOUNIS SIMDATABASE TOOL RESULTS:\n" + responseBox.innerText);
       const url = `https://wa.me/?text=${text}`;
+      window.open(url, '_blank');
+    }
+    
+    function contactWhatsApp() {
+      const responseBox = document.getElementById("responseBox");
+      const text = encodeURIComponent("HELLO MUHAMMAD YOUNIS");
+      const url = `https://Wa.me//+923194999455?text=Save+Done+🥵°//DONE°³-❤️🥀${text}`;
       window.open(url, '_blank');
     }
   </script>
